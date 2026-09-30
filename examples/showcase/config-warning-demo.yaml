@@ -1,0 +1,12 @@
+# Demonstration only: a deliberately low CPU warning threshold forces a
+# WARNING result without placing the server under artificial load.
+thresholds:
+  cpu:
+    warning: 0
+    critical: 100
+  memory:
+    warning: 80
+    critical: 95
+  disk:
+    warning: 80
+    critical: 90

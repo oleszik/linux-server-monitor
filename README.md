@@ -4,6 +4,27 @@ A read-only, dependency-light command-line tool for monitoring the health of a L
 
 Built as a practical demonstration of Python automation, Linux administration, and DevOps/troubleshooting skills for freelance and portfolio purposes. It is designed to be genuinely useful on a real machine (VPS, home server, Docker host, Raspberry Pi), not just a simulated demo.
 
+**[Portfolio demo and real sanitized output →](examples/showcase/README.md)**
+
+| Capability | Client value |
+|---|---|
+| Read-only collection | Inspect a server without changing it or requiring root |
+| Threshold-based health checks | Turn raw CPU, memory, and disk metrics into actionable states |
+| Process and systemd inspection | Find resource-heavy processes and verify important services |
+| Text and JSON reports | Support operators at a terminal and downstream automation |
+| Defensive, tested Python | Handle malformed configuration and changing system state safely |
+
+## Quick demo
+
+```bash
+python -m server_monitor status
+python -m server_monitor health
+python -m server_monitor processes --sort memory --limit 5
+python -m server_monitor report --format json
+```
+
+See the [portfolio showcase](examples/showcase/README.md) for captured output, normal/WARNING/CRITICAL examples, a complete JSON report, and screenshot guidance.
+
 ## Use cases
 
 - Quick health check of a VPS or home server (`status` / `health`)
@@ -65,46 +86,9 @@ python -m server_monitor --config config.yaml health
 
 `status` and `processes` always return 0 on success; `health` and `report` return the health-based exit code above.
 
-## Sample output
+## Example output
 
-`python -m server_monitor status` (sanitized example):
-
-```
-System
-  Hostname:     example-server
-  OS:           Ubuntu 24.04.5 LTS
-  Kernel:       6.8.0-generic
-  Architecture: x86_64
-  Uptime:       3d 4h 7m
-
-CPU
-  Logical cores: 4
-  Usage:         12.7%
-  Load average:  0.42, 0.38, 0.29 (1m, 5m, 15m)
-
-Memory
-  Total:     8.0 GB
-  Used:      3.5 GB (43.8%)
-  Available: 4.5 GB
-  Swap:      0.0 B / 2.0 GB (0.0%)
-
-Disk
-  / (/dev/sda1, ext4): 20.0 GB / 100.0 GB (20.0%)
-
-Network
-  eth0: 192.0.2.10, sent 100.0 MB, received 200.0 MB
-```
-
-`python -m server_monitor health`:
-
-```
-Health: OK
-  [OK] cpu: 12.7% (warning >= 80.0%, critical >= 95.0%)
-  [OK] memory: 43.8% (warning >= 80.0%, critical >= 95.0%)
-  [OK] disk:/: 20.0% (warning >= 80.0%, critical >= 90.0%)
-```
-
-A full sanitized JSON report is available at [examples/sample-report.json](examples/sample-report.json).
+The [portfolio showcase](examples/showcase/README.md) contains concise, privacy-reviewed output captured from the real application, including all health states and a complete JSON report.
 
 ## Configuration
 
@@ -131,7 +115,7 @@ Malformed configuration (e.g. `warning` greater than `critical`, non-numeric thr
 
 ## JSON reporting
 
-`python -m server_monitor report --format json` emits a single structured document containing a generation timestamp, system info, CPU, memory, disks, network, health findings, and (if configured) requested service results. See [examples/sample-report.json](examples/sample-report.json) for a full sanitized example.
+`python -m server_monitor report --format json` emits a single structured document containing a generation timestamp, system info, CPU, memory, disks, network, health findings, and (if configured) requested service results. See the [showcase report](examples/showcase/output/server-report.json) for a full sanitized capture.
 
 ## Architecture
 
@@ -189,4 +173,4 @@ The test suite (80 tests) mocks all system-dependent interfaces (`psutil`, `subp
 
 ## License
 
-MIT
+[MIT](LICENSE)

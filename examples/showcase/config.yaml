@@ -1,0 +1,18 @@
+# Example configuration for the portfolio demo.
+# Customize thresholds and service names for the server being monitored.
+thresholds:
+  cpu:
+    warning: 80
+    critical: 95
+
+  memory:
+    warning: 80
+    critical: 95
+
+  disk:
+    warning: 80
+    critical: 90
+
+services:
+  - ssh
+  - docker

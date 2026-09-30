@@ -1,0 +1,7 @@
+Processes (top 5 by memory)
+      PID    CPU%    MEM%  NAME
+     4102    15.4     3.5  browser
+     4103     0.0     2.3  browser
+     4201    15.7     1.9  editor
+     4104     0.0     1.5  browser
+     4202     0.0     1.4  editor
