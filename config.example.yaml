@@ -1,0 +1,20 @@
+# Example server-monitor configuration.
+# Copy to config.yaml and adjust as needed, then run:
+#   python -m server_monitor --config config.example.yaml health
+
+thresholds:
+  cpu:
+    warning: 80
+    critical: 95
+
+  memory:
+    warning: 80
+    critical: 95
+
+  disk:
+    warning: 80
+    critical: 90
+
+services:
+  - ssh
+  - docker
