@@ -1,0 +1,5 @@
+Health: OK
+  [OK] cpu: 4.4% (warning >= 80.0%, critical >= 95.0%)
+  [OK] memory: 54.9% (warning >= 80.0%, critical >= 95.0%)
+  [OK] disk:/: 19.3% (warning >= 80.0%, critical >= 90.0%)
+  [OK] disk:/boot/efi: 0.6% (warning >= 80.0%, critical >= 90.0%)

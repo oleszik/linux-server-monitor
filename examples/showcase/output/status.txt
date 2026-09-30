@@ -1,0 +1,40 @@
+System
+  Hostname:     demo-server
+  OS:           Ubuntu 24.04.5 LTS
+  Kernel:       7.0.0-31-generic
+  Architecture: x86_64
+  Uptime:       13m
+
+CPU
+  Logical cores: 16
+  Usage:         4.4%
+  Load average:  0.80, 5.22, 5.72 (1m, 5m, 15m)
+
+Memory
+  Total:     13.5 GB
+  Used:      7.4 GB (54.8%)
+  Available: 6.1 GB
+  Swap:      2.0 GB / 4.0 GB (49.5%)
+
+Disk
+  / (/dev/vda1, ext4): 85.5 GB / 467.3 GB (19.3%)
+  /boot/efi (/dev/vda15, vfat): 6.1 MB / 1.0 GB (0.6%)
+
+Network
+  lo: 127.0.0.1, sent 252.9 KB, received 252.9 KB
+  eth0: 192.0.2.10, sent 32.4 MB, received 89.5 MB
+  bridge1: 198.51.100.1, sent 22.3 KB, received 1.2 KB
+  bridge2: 198.51.100.2, sent 1.6 MB, received 161.0 KB
+  docker0: 203.0.113.1, sent 0.0 B, received 0.0 B
+  bridge3: 198.51.100.3, sent 0.0 B, received 0.0 B
+  bridge4: 198.51.100.4, sent 0.0 B, received 0.0 B
+  bridge5: 198.51.100.5, sent 224.6 KB, received 6.6 KB
+  bridge6: 198.51.100.6, sent 0.0 B, received 0.0 B
+  veth-demo-01: no IPv4 address, sent 97.9 KB, received 57.5 KB
+  veth-demo-02: no IPv4 address, sent 27.3 KB, received 1.5 KB
+  veth-demo-03: no IPv4 address, sent 131.9 KB, received 182.9 KB
+  veth-demo-04: no IPv4 address, sent 170.1 KB, received 9.0 KB
+  veth-demo-05: no IPv4 address, sent 20.0 KB, received 1.2 KB
+  veth-demo-06: no IPv4 address, sent 98.6 KB, received 33.9 KB
+  veth-demo-07: no IPv4 address, sent 1.4 MB, received 60.7 KB
+  veth-demo-08: no IPv4 address, sent 229.6 KB, received 7.6 KB

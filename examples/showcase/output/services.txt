@@ -1,0 +1,3 @@
+Services
+  ssh: active (enabled: enabled)
+  docker: active (enabled: enabled)

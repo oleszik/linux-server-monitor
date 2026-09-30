@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-09-30T14:43:34.002695+00:00",
+  "system": {
+    "hostname": "demo-server",
+    "os_name": "Linux",
+    "os_version": "Ubuntu 24.04.5 LTS",
+    "kernel_version": "7.0.0-31-generic",
+    "architecture": "x86_64",
+    "uptime_seconds": 819.8615992069244
+  },
+  "cpu": {
+    "logical_cores": 16,
+    "usage_percent": 3.7,
+    "load_average_1m": 0.8017578125,
+    "load_average_5m": 5.2197265625,
+    "load_average_15m": 5.71826171875
+  },
+  "memory": {
+    "total_bytes": 14490632192,
+    "used_bytes": 7953727488,
+    "available_bytes": 6536904704,
+    "usage_percent": 54.9,
+    "swap_total_bytes": 4294963200,
+    "swap_used_bytes": 2123862016,
+    "swap_usage_percent": 49.5
+  },
+  "disks": [
+    {
+      "mount_point": "/",
+      "device": "/dev/vda1",
+      "filesystem_type": "ext4",
+      "total_bytes": 501809635328,
+      "used_bytes": 91775594496,
+      "free_bytes": 384468238336,
+      "usage_percent": 19.3,
+      "error": null
+    },
+    {
+      "mount_point": "/boot/efi",
+      "device": "/dev/vda15",
+      "filesystem_type": "vfat",
+      "total_bytes": 1124999168,
+      "used_bytes": 6438912,
+      "free_bytes": 1118560256,
+      "usage_percent": 0.6,
+      "error": null
+    }
+  ],
+  "network": [
+    {
+      "name": "lo",
+      "ipv4_address": "127.0.0.1",
+      "bytes_sent": 258972,
+      "bytes_received": 258972
+    },
+    {
+      "name": "eth0",
+      "ipv4_address": "192.0.2.10",
+      "bytes_sent": 34078615,
+      "bytes_received": 93844014
+    },
+    {
+      "name": "bridge1",
+      "ipv4_address": "198.51.100.1",
+      "bytes_sent": 22818,
+      "bytes_received": 1225
+    },
+    {
+      "name": "bridge2",
+      "ipv4_address": "198.51.100.2",
+      "bytes_sent": 1705182,
+      "bytes_received": 164874
+    },
+    {
+      "name": "docker0",
+      "ipv4_address": "203.0.113.1",
+      "bytes_sent": 0,
+      "bytes_received": 0
+    },
+    {
+      "name": "bridge3",
+      "ipv4_address": "198.51.100.3",
+      "bytes_sent": 0,
+      "bytes_received": 0
+    },
+    {
+      "name": "bridge4",
+      "ipv4_address": "198.51.100.4",
+      "bytes_sent": 0,
+      "bytes_received": 0
+    },
+    {
+      "name": "bridge5",
+      "ipv4_address": "198.51.100.5",
+      "bytes_sent": 229946,
+      "bytes_received": 6734
+    },
+    {
+      "name": "bridge6",
+      "ipv4_address": "198.51.100.6",
+      "bytes_sent": 0,
+      "bytes_received": 0
+    },
+    {
+      "name": "veth-demo-01",
+      "ipv4_address": null,
+      "bytes_sent": 100292,
+      "bytes_received": 58894
+    },
+    {
+      "name": "veth-demo-02",
+      "ipv4_address": null,
+      "bytes_sent": 27985,
+      "bytes_received": 1491
+    },
+    {
+      "name": "veth-demo-03",
+      "ipv4_address": null,
+      "bytes_sent": 135101,
+      "bytes_received": 187286
+    },
+    {
+      "name": "veth-demo-04",
+      "ipv4_address": null,
+      "bytes_sent": 174219,
+      "bytes_received": 9177
+    },
+    {
+      "name": "veth-demo-05",
+      "ipv4_address": null,
+      "bytes_sent": 20512,
+      "bytes_received": 1224
+    },
+    {
+      "name": "veth-demo-06",
+      "ipv4_address": null,
+      "bytes_sent": 101005,
+      "bytes_received": 34702
+    },
+    {
+      "name": "veth-demo-07",
+      "ipv4_address": null,
+      "bytes_sent": 1455005,
+      "bytes_received": 62122
+    },
+    {
+      "name": "veth-demo-08",
+      "ipv4_address": null,
+      "bytes_sent": 235113,
+      "bytes_received": 7812
+    }
+  ],
+  "health": {
+    "overall_state": "OK",
+    "findings": [
+      {
+        "metric": "cpu",
+        "state": "OK",
+        "value": 3.7,
+        "warning_threshold": 80.0,
+        "critical_threshold": 95.0,
+        "message": "cpu: 3.7% (warning >= 80.0%, critical >= 95.0%)"
+      },
+      {
+        "metric": "memory",
+        "state": "OK",
+        "value": 54.9,
+        "warning_threshold": 80.0,
+        "critical_threshold": 95.0,
+        "message": "memory: 54.9% (warning >= 80.0%, critical >= 95.0%)"
+      },
+      {
+        "metric": "disk:/",
+        "state": "OK",
+        "value": 19.3,
+        "warning_threshold": 80.0,
+        "critical_threshold": 90.0,
+        "message": "disk:/: 19.3% (warning >= 80.0%, critical >= 90.0%)"
+      },
+      {
+        "metric": "disk:/boot/efi",
+        "state": "OK",
+        "value": 0.6,
+        "warning_threshold": 80.0,
+        "critical_threshold": 90.0,
+        "message": "disk:/boot/efi: 0.6% (warning >= 80.0%, critical >= 90.0%)"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "ssh",
+      "active_state": "active",
+      "enabled_state": "enabled",
+      "supported": true,
+      "error": null
+    },
+    {
+      "name": "docker",
+      "active_state": "active",
+      "enabled_state": "enabled",
+      "supported": true,
+      "error": null
+    }
+  ]
+}
